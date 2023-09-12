@@ -1,0 +1,62 @@
+/*
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*/
+
+
+
+h1 {
+    margin: auto;
+    font-size: 3rem;
+    color: olive;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.click:active {
+    color: red;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    font-family: sans-serif;
+    margin-top: 30px;
+    
+}
+
+p {
+   margin: auto;
+   text-align: center; 
+   width: 60ch;
+   font-family: sans-serif;
+   margin-top: 30px;
+   border: 1px solid olive;
+   border-radius: 20px;
+   padding: 20px;
+}
+
+.bild {
+    
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+
+
+
+/* em, rem, px, ch, vh, 
+*/

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lektion 3</title>
+    
+</head>
+<body>
+    <!--
+        img formats: 
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+     -->
+
+     <h1>Flower</h1>
+     <img src="img/flower.png" height="300px" alt="Bild på en blomma" loading="lazy">
+
+
+     <!--Video
+    Format: ogg, mp3, mp4. 
+    controls och source 
+
+    -->
+
+   <figure>
+    <figcaption>video </figcaption>
+    <video controls width="300" src="video/179480 (540p).mp4">Video
+        <a href="video/179480 (540p).mp4">Ladda ned</a>
+    </video>
+   </figure>
+
+    <figure>
+        <figcaption>Naturljud</figcaption>
+        <audio controls src="audio/nature.mp3">
+            <a href="audio/nature.mp3">Naturljud</a>
+        </audio>
+    </figure>
+
+    <!--Table 
+        caption, thead, tbody. 
+        thead, tbody, tfooter
+        Tr och td. 
+        colespan, rowspan. 
+    -->
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Result</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Philippe</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Marc</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Marc</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Eva</td>
+            <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <th>Day</th>
+            <th>Temp</th>
+            <th>Mean</th>
+        </thead>
+        <tbody>
+         <tr><td>1/9</td><td>23</td><td></td></tr>
+         <tr><td>2/9</td><td>27</td><td></td></tr>
+         <tr><td>3/9</td><td>25</td><td></td></tr>
+         <tr><td>4/9</td><td>30</td><td></td></tr>
+         <tr><td></td><td></td><td>Mean = 26.25</td></tr>
+        </tbody>
+    </table>
+
+    <!--Iframe 
+    https://www.w3schools.com/tags/tag_iframe.ASP
+    -->
+
+
+<!-- Form och get, kolla upp-->
+    <form action="httpbin.org" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" name="submit" id="submit" formaction="https://httpbin.org">
+      </form> 
+
+
+</body>
+</html>

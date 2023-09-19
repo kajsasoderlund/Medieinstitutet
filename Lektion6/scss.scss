@@ -1,0 +1,32 @@
+@import "functions";
+@import "variables";
+
+
+
+ .main {
+    background-color: colors(c2);
+    @include center;
+    
+    .p1 {
+        font-weight: weight(regular);
+        color: bg(c2);
+         
+    }
+
+    
+    .section {
+   
+        font-weight: weight(bold);
+        background-color: bg(c2);
+        
+        
+    }
+ } 
+
+
+
+ .main_section {  
+    @include fontstyle;
+ }
+
+ 

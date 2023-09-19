@@ -1,0 +1,21 @@
+.main {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .p1 {
+  font-weight: 400;
+  color: bg(c2);
+}
+.main .section {
+  font-weight: 700;
+  background-color: bg(c2);
+}
+
+.main_section {
+  font-size: 1.5 rem;
+  font-family: "Courier New", Courier, monospace;
+  color: aquamarine;
+  margin: 20px;
+}/*# sourceMappingURL=scss.css.map */

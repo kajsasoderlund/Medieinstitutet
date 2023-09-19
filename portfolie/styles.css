@@ -11,8 +11,9 @@ body {
 }
 
 #header{
+    
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(img/art4.webp);
     background-size: cover;
     background-position: center;
@@ -27,10 +28,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgb(146, 172, 172);
+    padding: 10px;
+    border-radius: 40px;
+    opacity: .8;
+    
 }
 
 .logo {
-    width: 100px;
+    width: 50px;
     border-radius: 50px;
 }
 
@@ -41,7 +47,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: rgb(47, 47, 47);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -75,3 +81,30 @@ nav ul li a:hover::after{
 .header-text h1 span {
     color: rgb(47, 47, 47);
 }
+
+.container1 {
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 15vh;
+
+}
+
+.p2 {
+    width: 40vh;
+    display: flex;
+    font-size: 3vh;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(47, 47, 47);
+
+}
+.img1 {
+    width: 39vh;
+    height: 60vh;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+

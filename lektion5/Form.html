@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+
+    <p>Student info.</p>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Personal Info</legend>
+      <p>
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+          autocomplete="on"
+          required
+          autofocus
+        />
+       
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last Name"
+          autocomplete="on"
+          required
+        />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+      </p>
+      <br>
+      <fieldset>
+       <legend>Photo</legend>
+      <img src="img/flower-100263_1280.jpg" width="300" alt="">
+      <p>A Kingfish student!</p>
+      <br>
+      </fieldset>
+      <br>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+      </form>
+
+    </fieldset>
+    
+   
+
+   
+
+
+
+  </body>
+</html>

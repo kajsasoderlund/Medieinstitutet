@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+
 .container {
     display: flex;
-    justify-content: space-evenly;  
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column-reverse; 
 }
+ 
+
+
+
+p {
+    font-size: 400px;
+}
+
+
 
 .box {
     margin: 1px;

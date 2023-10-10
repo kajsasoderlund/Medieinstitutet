@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*Svåraste för mig var att få till självaste layouten,
+då vi skulle göra detta med grid och jag känner mig egentligen 
+mer bekväm med flexbox så blev det en utmaning. När jag blev mer insatt i 
+grid template areas och efter mycket fram och tillbaka samt många försök så lyckades jag tillslut även fast det tog lång tid.
+*/
+
+
+.el{
+    background-color:blueviolet;
+    color: white;
+    padding:0.5rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+.li {
+    text-decoration: none;
+    color: white;
+    
+} 
+
+nav {
+    padding: 2vh;
+}
+
+li a:hover {
+    color: yellow;
+    
+}
+
+
+/*Döpte de olika boxarna med "grid-area" till one, two osv och placerade sedan ut
+så som jag ville ha det.*/
+
+main {
+    min-height: 100vh;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    "two two two two two"
+    "one one one one three"
+    "four four five five three"
+    "four four five five three";
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    
+}
+
+
+.box {
+    padding: 10px;
+    
+}
+
+/*Kommentarerna för varje box var bara till för mig 
+för att få det mer tydligt vilken box som var vilken.*/
+
+.box:first-child{
+    /*Swedish mountain*/
+    grid-area: one;
+    background-color: blue;
+    display:grid;
+    
+    
+}
+.box:nth-child(2){
+    grid-area: two;
+    background-color: white;
+    /*Swedish flag*/
+    
+}
+
+.box:nth-child(3){
+    grid-area: three;
+    background-color:lightblue;
+    /*Sido kolumn*/
+    
+}
+
+.box:nth-child(3):first-letter{
+    font-size: 10vh;
+    color: yellow;
+    
+}
+
+.box:nth-child(4){
+    /*Vertical text*/
+    grid-area: four;
+    background-color: lightblue;
+    writing-mode:vertical-rl;
+    padding-right: 10vh;
+    
+    
+    
+}
+
+.box:nth-child(5){
+    /*Bredvid vertical text*/
+    grid-area: five;
+    background-color: purple;
+    
+}
+
+footer {
+    text-align: right;
+    
+}
+
+
+

@@ -1,0 +1,221 @@
+
+/* Four equal columns 
+
+.class {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+    background-color: rgb(52, 52, 52);
+}
+
+
+#header {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(52, 52, 52);
+    padding: 10px;
+    border-radius: 40px;
+    opacity: .5;
+   
+    
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ffffff;;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.test {
+    opacity: .3;
+    margin-left: 700px ;
+    border-radius: 10px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh;
+ 
+  
+}
+
+.header-text {
+    margin-top: 10%;
+
+}
+
+.header-text h1 {
+    font-size: 90px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.header-text h1 span {
+    color: rgb(106, 106, 106);
+}
+
+.hr {
+    border: 2px solid black;
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 70px;
+    opacity: .4;
+    border-radius: 2px;
+
+}
+
+.img1 {
+    width: 39vh;
+    height: 60vh;
+    margin-top: 6vh;
+    border-radius: 25px;
+    opacity: .8;
+    padding: 15px;
+}
+
+#container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+    
+    /* Styling the area of the slides */
+    .myslide {
+    overflow: hidden;
+    height: 510px;
+    width: 900px;
+    padding-top: 6vh;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    /* Style each of the sides 
+    with a fixed width and height */
+    .slide {
+    float: left;
+    height: 510px;
+    width: 900px;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(900px * 4);
+    
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 30s ease infinite;
+    }
+    
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) {
+    
+    opacity: .6;
+    text-align: center;
+    padding: 80px;
+    }
+    
+    .slide:nth-child(2) {
+    
+    opacity: .6;
+    text-align: center;
+    padding: 80px;
+    }
+    
+    .slide:nth-child(3) {
+    
+    opacity: .6;
+    text-align: center;
+    padding: 80px;
+    }
+    
+    .slide:nth-child(4) {
+   
+    opacity: .6;
+    text-align: center;
+    padding: 80px;
+    }
+    
+    /* Define the animation 
+    for the slideshow */
+    @keyframes slide {
+    
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-900px * 1);
+    }
+    
+    60% {
+        margin-left: calc(-900px * 2);
+    }
+    
+    80% {
+        margin-left: calc(-900px * 3);
+    }
+    }
+    

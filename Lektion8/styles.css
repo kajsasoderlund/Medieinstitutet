@@ -1,0 +1,160 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/*
+header {
+    border: 5px solid rgb(124, 122, 122);
+    background-color: red;
+    border-radius: 5px;
+    
+}
+
+.navigation {
+    background-color: rgb(0, 200, 255);
+}
+
+
+
+#main-content {
+    background-color: rgb(184, 245, 93);
+    border: 1px solid green;
+    padding: 2vh;
+}
+
+.content {
+    background-color: rgb(225, 253, 183);
+    margin: 1vh;
+    padding: 2vh;
+    border: green solid 1px;
+    
+}
+
+.mydiv {
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+p:first-child {
+    background-color: rgb(213, 87, 194);
+    
+}
+
+.circle {
+    border: 1px solid red;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    
+}
+
+.image {
+    width: 70vh;
+}
+
+
+
+.outer-container {
+    margin-top: 30vh;
+    width: 60vh;
+    height: 60vh;
+    border: dashed black 3px;
+    margin-bottom: 80vh;
+}
+
+.inner-container {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 50vh;
+    height: 50vh;
+    border: solid rgb(55, 8, 224) 3px;
+    
+}
+
+.box {
+     width: 100px;
+     height: 100px;
+     border: solid black 1px;
+     padding: 1rem;
+}
+
+.relative{
+    background-color: red;
+    
+}
+
+.absolute{
+    background-color: green;
+    
+}
+
+.font {
+    font-size: 1rem;
+    margin: 30vh;
+    transition: font-size 1s;
+}
+
+.font:active {
+    font-size: 5rem;
+
+}
+
+
+/*.cirkel {
+    margin: 50vh;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation: cirkel 2s infinite;
+    animation-direction:alternate;
+}*/
+
+/*@keyframes cirkel {
+    from{top:10px;}
+    to{top:100px;}
+    from {width: 20px; height: 20px;}
+ }*/
+
+
+
+.heart {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background-color: red;
+    animation: heart 1.2s infinite;
+}
+
+.heart::before, .heart::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red; 
+}
+
+.heart::before {
+    left: -50px;
+}
+
+.heart::after {
+    top: -50px;
+}
+@keyframes heart {
+    to {scale: 1.5;}
+}
